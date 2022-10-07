@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+#logo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+#logo img {
+  display: inline;
+  height: 25px;
+  filter: invert();
+}
+
+#logo p {
+  text-align: center;
+  color: white;
+  display: inline;
+  font-size: 0.4rem;
+}
+
+#navbar {
+  /* background-color: grey; */
+  padding: 5px 10px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  justify-content: space-between;
+}
+
+#navbar::before {
+  content: "";
+  background-color: rgb(209, 35, 35);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#navbar ul {
+  display: inline-flex;
+  justify-content: center;
+  /* padding: 2px 20px; */
+}
+
+#navbar li {
+  list-style: none;
+  padding: 5px 20px;
+}
+
+#navbar a {
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#navbar a:hover {
+  color: rgba(59, 53, 53, 0.782);
+  font-weight: bold;
+  background-color: yellow;
+  border-radius: 15px;
+}
+
+#introsection {
+  /* background: url(../static/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 25%; */
+  color: white;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+#introsection::before {
+  content: "";
+  background: url(../static/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 25%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 467px;
+  width: 100%;
+  z-index: -1;
+}
+
+#introsection div.short h2 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 15px;
+  /* display: block; */
+}
+
+.cards {
+  display: flex;
+  margin: 10px;
+}
+
+.card {
+  border: 2px solid white;
+  border-radius: 15px;
+  /* color: white; */
+  width: 30%;
+  margin: 15px;
+  height: 20rem;
+  padding: 10px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card-img {
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+#missionsection {
+  background-color: rgb(60, 60, 60);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* #missionsection h2 {
+  background-color: grey;
+} */
+
+#sponsorsection {
+  background-color: rgb(221, 221, 25);
+  color: rgba(59, 53, 53, 0.782);
+}
+
+.sponsors {
+  /* height: 420px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.sponsors img {
+  height: 50px;
+  margin: 20px;
+}
+
+#footer {
+  display: flex;
+  color: white;
+  height: 30px;
+  background-color: rgb(60, 60, 60);
+  align-items: center;
+  justify-content: center;
+}

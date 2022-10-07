@@ -1,0 +1,16 @@
+{
+  "name": "shalu-dance-academy",
+  "version": "1.0.0",
+  "description": "dance website for learning ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shalini singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "moongose": "^1.0.0",
+    "pug": "^3.0.2"
+  }
+}

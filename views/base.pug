@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(content='width=device-width' initial-scale='1' shrink-to-fit='no' name='viewport')
+    title Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar.top
+        div#logo
+            img(src='../static/logo1.png')
+            p SDA
+        ul 
+            li #[a(href="/") home] 
+            li 
+                a(href="/about") about 
+            li 
+                a(href="/services") services 
+            li 
+                a(href="/class") class info 
+            li  
+                a(href="/contact") contact us
+
+    block content
+    footer#footer
+        | copyright &copy 2022 ShaluDanceAcademy.com | All rights reserved      

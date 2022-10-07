@@ -1,0 +1,61 @@
+//- index.pug
+doctype html
+html
+  head
+    meta(content='width=device-width' initial-scale='1' shrink-to-fit='no' name='viewport')
+    //- link (rel='stylesheet' media='only screen and (max-width: 1000px)' href='../static/phone.css')
+    title Dance Academy 
+    |<link rel="stylesheet" href="../static/style.css" />    
+    |<link rel="stylesheet" href="../static/phone.css" media="only screen and (max-width: 1000px)" />
+  body
+    nav#navbar.top
+        div#logo
+            img(src='../static/logo1.png')
+            p SDA
+        ul 
+            li #[a(href="/") home] 
+            li 
+                a(href="/about") about 
+            li 
+                a(href="/services") services 
+            li 
+                a(href="/class") class info 
+            li  
+                a(href="/contact") contact us
+    section#introsection
+        div
+            h2 Welcome to Shalu Dance Academy 
+        div.short
+            h2 EAT . SLEEP . DANCE . REPEAT
+    
+    section#missionsection
+        h2 Dance Forms
+        div.cards
+            div.card
+                h3 Salsa
+                div.card-box 
+                    img.card-img(src="../static/logo.png")
+                    p.card-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, commodi eius animi delectus ipsa inventore a tempore voluptate, quod distinctio officia! Quidem magni error hic voluptatum atque dicta velit corrupti.
+            div.card
+                h3 Tango
+                div.card-box 
+                    img.card-img(src="../static/logo.png")
+                    p.card-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, commodi eius animi delectus ipsa inventore a tempore voluptate, quod distinctio officia! Quidem magni error hic voluptatum atque dicta velit corrupti.
+            div.card
+                h3 Free Style
+                div.card-box 
+                    img.card-img(src="../static/logo.png")
+                    p.card-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, commodi eius animi delectus ipsa inventore a tempore voluptate, quod distinctio officia! Quidem magni error hic voluptatum atque dicta velit corrupti.
+    section#sponsorsection 
+        h2 Our Sponsors
+        div.sponsors 
+            img(src='../static/apple.png')
+            img(src='../static/ms.png')
+            img(src='../static/hp.png')
+            img(src='../static/google.png')
+            img(src='../static/dell.png')
+
+    footer#footer
+        | copyright &copy 2022 ShaluDanceAcademy.com | All rights reserved
+    script
+      include ../static/script.js
